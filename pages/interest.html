@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title> Schism Online - Interested? </title>
+      <!--
+         Schism Online Interest page
+         Filename: interest.html
+         Author: Cameron Tobin
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="https://SchismOnlineProject.github.io/js/modernizr.custom.40753.js"></script>
+	  <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+      <link rel="stylesheet" href="https://SchismOnlineProject.github.io/styles/styles.css">
+   </head>
+   <body>
+      <div class="container">
+         <p class="skipnavigation"><a href="#contentstart"> Skip navigation </a></p> 
+         <header>
+            <h1> Schism Online </h1>
+			<h1><span> A Passion Project </span></h1>
+            <div>
+               <a href="https://SchismOnlineProject.github.io/index.html""><img src="https://SchismOnlineProject.gtihub.io/images/SchismOnlineLogo.png" width="256" height="256" alt=""></a>
+            </div>
+         </header>
+         <nav class="sitenavigation">
+            <ul>
+               <li><a href="https://SchismOnlineProject.github.io/index.html"> Home </a></li>
+               <li><a href="https://SchismOnlineProject.github.io/schism.html"> The Schism </a></li>
+               <li><a href="https://SchismOnlineProject.github.io/mechanics.html"> Mechanics </a></li>
+               <li><a href="https://SchismOnlineProject.github.io/interest.html"> Interested? </a></li>
+			   <li><a href="https://SchismOnlineProject.github.io/about.html"> About Us </a></li>
+            </ul>
+         </nav>
+         <article id="contentstart">
+            <h2> Show Your Interest! </h2>
+			<form action="results.html">
+			<fieldset class="contactinfo">
+			   <legend> Contact Information </legend>
+			   <label for="fnameinput">
+			      First Name
+				  <input type="text" id="fnameinput" name="fname" placeholder="First name">
+			   </label>
+			   <label for="lnameinput">
+			      Last Name
+				  <input type="text" id="lnameinput" name="lname" placeholder="Last name">
+			   </label>
+			   <label for="emailinput">
+			      Email
+				  <input type="email" id="emailinput" name="email" placeholder="address@example.com">
+			   </label>
+			</fieldset>
+			<fieldset class="ageinfo">
+			   <legend> Age Demographic </legend>
+			   <select id="agerange" name="agedemographic">
+			      <option value="null"> choose your age </option>
+			   	  <option value="12-"> 12- </option>
+				  <option value="13-15"> 13-15 </option>
+				  <option value="16-17"> 16-17 </option>
+				  <option value="18-35"> 18-35 </option>
+				  <option value="36-54"> 36-54 </option>
+				  <option value="55+"> 55+ </option>
+			   </select>
+			</fieldset>
+			<fieldset class="newsletterinfo">
+			   <legend> What do you want to be updated about? </legend>
+			   <label for="devupdates">
+			      Developer Updates
+			      <input type="checkbox" id="devupdates" name="newsletter" value="Developer Updates">
+			   </label>
+			   <label for="oppurtunites">
+			      Oppurtunites
+			      <input type="checkbox" id="oppurtunites" name="newsletter" value="Oppurtunites">
+			   </label>
+			   <label for="communityevents">
+			      Community Events
+			      <input type="checkbox" id="communityevents" name="newsletter" value="Community Events">
+			   </label>
+			</fieldset>
+			<fieldset class="betainterest">
+			   <legend> Beta Testing Interest </legend>
+			   <label for="inbeta">
+			      Interested in Beta Testing
+			      <input type="radio" id="inbeta" name="betainterest" value="Interested in Beta Testing">
+			   </label>
+			   <label for="">
+			      Not Interested in Beta Testing
+			      <input type="radio" id="nobeta" name="betainterest" value="Not Interested in Beta Testing">
+			   </label>
+			</fieldset>
+			<fieldset class="additionalinfo">
+			   <legend> Additional Information </legend>
+			   <label for="feedback">
+			      Do you have any questions?
+				  <textarea id="feedback" name="feedback" rows="7"></textarea>
+			   </label>
+			</fieldset>
+			<fieldset class="submitbutton">				
+			   <input type="submit" id="submit" value="Submit">
+			</fieldset>
+         </article>
+         <footer>
+            <p> Pigeon Legion Studios </p>
+         </footer>
+      </div>
+   </body>
+</html>

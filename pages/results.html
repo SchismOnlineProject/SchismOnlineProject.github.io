@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title> Schism Online - Results </title>
+      <!--
+         Schism Online Results page
+         Filename: results.html
+         Author: Cameron Tobin
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="https://SchismOnlineProject.github.io/js/modernizr.custom.40753.js"></script>
+	  <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+      <link rel="stylesheet" href="https://SchismOnlineProject.github.io/styles/styles.css">
+   </head>
+   <body>
+      <div class="container">
+         <p class="skipnavigation"><a href="#contentstart"> Skip navigation </a></p> 
+         <header>
+            <h1> Schism Online </h1>
+			<h1><span> A Passion Project </span></h1>
+            <div>
+               <a href="https://SchismOnlineProject.github.io/index.html""><img src="https://SchismOnlineProject.gtihub.io/images/SchismOnlineLogo.png" width="256" height="256" alt=""></a>
+            </div>
+         </header>
+         <nav class="sitenavigation">
+            <ul>
+               <li><a href="https://SchismOnlineProject.github.io/index.html"> Home </a></li>
+               <li><a href="https://SchismOnlineProject.github.io/schism.html"> The Schism </a></li>
+               <li><a href="https://SchismOnlineProject.github.io/mechanics.html"> Mechanics </a></li>
+               <li><a href="https://SchismOnlineProject.github.io/interest.html"> Interested? </a></li>
+			   <li><a href="https://SchismOnlineProject.github.io/about.html"> About Us </a></li>
+            </ul>
+         </nav>
+         <article id="contentstart">
+            <h2>Your form has been submitted</h2>
+            <h3>You entered the following data:</h3>
+            <script> 
+               var formData = location.search;
+               formData = formData.substring(1, formData.length);
+               while (formData.indexOf("+") !== -1) {
+                  formData = formData.replace("+", " ");
+               }
+               formData = decodeURIComponent(formData);
+               var formArray = formData.split("&");
+               for (var i = 0; i < formArray.length; i = i + 1) {
+                  document.write("<p>" + formArray[i] + "</p>");
+               }
+               </script>
+         </article>
+         <footer>
+            <p> Pigeon Legion Studios </p>
+         </footer>
+      </div>
+   </body>
+</html>
